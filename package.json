@@ -1,0 +1,29 @@
+{
+  "name": "food-ordering-app",
+  "version": "0.0.1",
+  "description": "food ordering app",
+  "main": "App.js",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build  index.html --no-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sshukl72/food-ordering-app.git"
+  },
+  "author": "shubham shukla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sshukl72/food-ordering-app/issues"
+  },
+  "homepage": "https://github.com/sshukl72/food-ordering-app#readme"
+}
