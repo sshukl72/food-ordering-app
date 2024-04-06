@@ -1,54 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-
-/**
- * Header
- * -----Logo
- * -----NavItems
- * Body
- * -----Search
- * -----RestaurantContainer
- * -----RestaurantCard
- * Footer
- * ------links
- * ------address
- * ------contact
- */
-
-const Header = () => {
-    return (
-        <div className="header">
-            <div className='logo-container'>
-                <img className='logo' src="https://w7.pngwing.com/pngs/408/758/png-transparent-cooking-chef-s-hat-restaurant-chef-professional-cooking-knife-kitchen-utensils-icon-logo.png" alt="restaurants logo" />
-            </div>
-            <div className='nav-items'>
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    );
-};
-
-const RestaurantCard = (props) => {
-    const { resCard } = props;
-
-    const { name, cuisines, avgRating, costForTwo , cloudinaryImageId} = resCard?.info;
-
-    return (
-        <div className="restaurant-card">
-            <img className="restaurant-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId} alt="restaurant logo" />
-            <h3>{name}</h3>
-            <h4>{cuisines.join(", ")}</h4>
-            <h4>{avgRating}</h4>
-            <h4>{costForTwo}</h4>
-        </div>
-    )
-}
-
 const resList = [
     {
         "info": {
@@ -1742,26 +1691,5 @@ const resList = [
         "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     }
 ];
-const Body = () => {
-    return (
-        <div className="body">
-            <div className='search'>Search</div>
-            <div className='restaurant-container'>
-                {resList.map(resData => <RestaurantCard key={resData.info.id}resCard={resData} />)}
-            </div>
-        </div>
-    )
-}
-const AppLayout = () => {
-    return (
-        <div className="app">
-            <Header />
-            <Body />
-        </div>
-    );
-};
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout/>);  // Render the heading component in the
-
+export default resList;
