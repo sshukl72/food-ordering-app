@@ -4,11 +4,12 @@
   border: 3px solid black;
 }
 
+
 .logo {
   width: 90px;
 }
-.nav-items{
-    padding: 0px 20px;
+.nav-items {
+  padding: 0px 20px;
 }
 .nav-items > ul {
   font-size: 20px;
@@ -20,27 +21,37 @@
   padding: 10px;
   margin: 10px;
 }
-.restaurant-container{
-    display: flex;
-    flex-wrap: wrap;
+.restaurant-container {
+  display: flex;
+  flex-wrap: wrap;
 }
-.restaurant-card{
-    margin: 5px;
-    width: 200px;
-    height: 300px;
-    padding: 5px;
-    background-color: #f0f0f0;
+.restaurant-card {
+  margin: 8px;
+  width: 200px;
+  padding: 0px 3px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  display: grid;
+  text-align: center;
+}
+h4,
+h3 {
+  padding: 5px;
+  margin: 0px;
+
+}
+.restaurant-card:hover {
+  cursor: pointer;
+  border: 1px solid black;
+  margin: 1px;
 }
 
-.restaurant-card:hover{
-    cursor: pointer;
-    border: 1px solid black;
+.search {
+  padding: 10 px;
 }
 
-.search{
-    padding: 10 px;
-}
-
-.restaurant-logo{
-    width: 100%;
+.restaurant-logo {
+  width: 100%;
+  height: 150;
+  border-radius: 25px;
 }
