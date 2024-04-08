@@ -55,3 +55,8 @@ h3 {
   height: 150;
   border-radius: 25px;
 }
+
+.filter-btn{
+  margin: 10px;
+  cursor: pointer;
+}
