@@ -4,7 +4,6 @@
   border: 3px solid black;
 }
 
-
 .logo {
   width: 90px;
 }
@@ -38,7 +37,6 @@ h4,
 h3 {
   padding: 5px;
   margin: 0px;
-
 }
 .restaurant-card:hover {
   cursor: pointer;
@@ -56,7 +54,16 @@ h3 {
   border-radius: 25px;
 }
 
-.filter-btn{
+.filter-btn {
   margin: 10px;
   cursor: pointer;
+}
+.shimmer {
+  display: inline-flex;
+  margin: 8px;
+  height: 350px;
+  width: 200px;
+  padding: 0px 3px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
 }
