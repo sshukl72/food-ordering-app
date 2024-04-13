@@ -1,4 +1,7 @@
-- Microservices:- Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs
+- React Router Dom
 
-Shimmer UI
-It is mock UI which is rendered until the data is fetched and re render on thre screen. It helps in showing a loading state to user while is a modern and responsive HTML5 template design
+This gives you the ability to route the different path using react router. We have to create the using createBrowerRouter which takes in the path and the component in fornm of list.
+
+React provider is a component which takes createBrowerRouter in roter props.
+
+Reacter router dom gives a hook useRouteError which gives the errorin more detail. We can use this to show the error in the UI.

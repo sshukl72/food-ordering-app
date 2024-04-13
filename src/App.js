@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AppLayout from './components/AppLayout'
-
+import appRouter from './route/paths';
+import { RouterProvider } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<AppLayout/>);  // Render the heading component in the
+root.render(<RouterProvider router={appRouter} />);  // Render the heading component in the
 
